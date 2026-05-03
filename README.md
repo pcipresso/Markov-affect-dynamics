@@ -52,3 +52,47 @@ Run:
 
 ```r
 source("Preprocessing_row_data_to_C_matrix.R")
+This step:
+
+maps raw affect data into discrete states
+constructs the transition count matrix (C)
+Step 2 — Markov analysis
+
+Run:
+source("Markov_affect_dynamics.R")
+This step:
+
+estimates transition probabilities (P)
+computes Markov-based indices
+generates visualizations
+Output
+
+The workflow produces:
+
+Transition count matrix (C)
+Transition probability matrix (P)
+State-level indices:
+persistence
+mobility
+entropy
+directional asymmetry
+attractor strength
+System-level summaries
+Visual outputs:
+heatmaps
+transition graphs
+Notes
+The workflow is modular: users can enter at the preprocessing stage or directly from an existing transition matrix.
+State construction must be explicitly defined and justified.
+The same pipeline applies across different data modalities once a discrete state mapping is specified.
+Reproducibility
+
+The full pipeline can be executed end-to-end using the provided scripts, allowing researchers to move from raw intensive longitudinal data to interpretable transition-based features with minimal manual intervention.
+
+Related publication
+
+Full methodological details are provided in the associated tutorial:
+
+Discrete-Time Markov Chains for Affect Dynamics: A Reproducible Workflow
+
+(under review)
