@@ -2,6 +2,8 @@
 
 Reproducible R workflow for analyzing affect dynamics from intensive longitudinal data using observed-state discrete-time Markov chains.
 
+**Authors:** Pietro Cipresso & Francesca Borghesi
+
 ## Overview
 
 This repository provides a complete and modular pipeline for modeling affect dynamics through discrete-time Markov chains based on observed states.
